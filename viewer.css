@@ -1,0 +1,35 @@
+
+@font-face {
+  font-family: Vegur;
+  src: local("Vegur"),
+  local("Vegur"),
+  url('VegurMedium.otf');
+  font-weight: normal;
+}
+
+* { font-family: Vegur, Sans; background-color:MintCream; font-size:105%}
+part:before { content: attr(fictionaldate)" | " attr(status)  " - " attr(area) " | " attr(time) " - " attr(location); }
+part { width:100%; border-style:none; display: table;  border-spacing:12px; font-size:100%}
+name {  display:table; font-size:100%; text-decoration:underline; }
+line { text-align:center; background-color:MintCream; width:100%; display: table; border-style:solid; border-width:1px; font-size:100%; margin:1px; }
+
+scriptment:before { font-size:120%; content: "   ["attr(id)  "] - "  attr(status)  " - " attr(area) " | " attr(time) " - " attr(location); }
+
+line[speaker]:before { font-weight:bold; text-align:left; margin-left:-10px; content: attr(speaker)  "  [" attr(id) "]"; font-size:70%; display:block;
+text-decoration:underline;  }
+
+line[speaker="game"] { background-color:LightBlue; font-family: Liberation Mono, Monospace; }
+
+line[speaker="note"] { background-color:PaleYellow; font-family: Futura; }
+
+narration { text-align:left; background-color:Moccasin; width:100%; display: table; border-style:double; border-width:3px; font-size:100%; }
+comment { background-color:PaleTurquoise; text-align:left; border-style:solid; border-width:0px; display:table; font-size:90%; font-style:italic; }
+condition:before { content:"Condition "; display:table; text-align:center; font-size:120%; }
+choice:before { text-align: center; font-size:130%; content:"Choice # " attr(number); display:table; border-width:0px; }
+choice { text-align:center; width:100%; }
+condition { text-align:center; display:table; border-spacing:12px; border-width:1px; border-style:dashed; background-color:PaleTurquoise; width:100%; }
+
+.navlink { background-color:#FFFFFF; }
+
+INSTRUMENT { color: blue; }
+
