@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="viewer.css" type="text/css"?>
+<scriptment id="1000" point="hereandnow" location="github" area="internet" time="08:00:00" area="interior" localizationstatus="original" fictionaldate="2015-07-30" status="prettynew" >
+	<part>
+		<narration>This was an old script format I wanted to use for games I tried to make!<comment>I was one of those kids that wanted to make the universe.</comment></narration>
+		<line id="1000" speaker="torchie" lang="en">And so I was kind of picturing the fantastic scenario in which I made something good enough to get translated.</line>
+		<narration>And had voices.</narration>
+		<line id="2000" speaker="torchie" lang="en" voicelang="en">And ISO codes for the text and voices.</line>
+		<line id="3000" speaker="torchie" lang="en" voicelang="en">I didn't know how many operating systems had extensive frameworks for localization already built in.</line>
+		<narration>Benevolent dictator had a serious case of NIH. <comment>"if you're using somebody else's engine, you're making somebody else's game," I said.</comment></narration>
+		<line id="4000" speaker="torchie" lang="en" voicelang="en">This is the character-speaking-a-line format.</line>
+		<narration>And this is the narrative action format.<comment>And this was meant to denote specific ways in which the game would guide or surprise the player.</comment></narration>
+		<line id="5000" speaker="torchie" lang="en" voicelang="en">I wrote the viewer program in jQuery in 2009; it was my first experience with the framework. </line>
+		<line id="6000" speaker="torchie" lang="en" voicelang="en">I also used fonts from The League of Movable Type; I was really excited about font-face.</line>
+		
+		<narration>It has a hard-coded index of script.xml files and really was meant to load those xml files onto the page. <comment>I knew "Frames were bad" and then replicated them anyway.</comment></narration>
+		<line id="7000" speaker="note">It would also appear that I wrote this when I didn't know what CSS selectors were.</line>
+		<line id="8000" speaker="game">Or how cumbersome XML is for writing stories.</line>
+		<condition>
+			<choice number="1"><narration>Especially not ones with branching paths.</narration></choice>
+			<choice number="2"><narration>Like these, which were meant to show branching parts of the game script.</narration></choice>
+		</condition>
+			
+	</part>
+</scriptment>
