@@ -1,0 +1,32 @@
+
+
+<html>
+	<head>
+		<title>A Script</title>
+		<script type="text/javascript" src="jquery.js"></script>
+		<LINK REL=StyleSheet HREF="viewer.css" TYPE="text/css">
+		<script>
+			$(document).ready(function () { 
+						$("#story").load("scripttest.xml");
+						$(".navlink").click( function() {
+							//alert($(this).attr("number") + ".xml");
+							$("#story").load($(this).attr("number") + ".xml");
+						});			
+			});
+		</script>
+	</head>
+	<body>
+		<div id="navigation" style="float:left; width:20%;">
+			<i><a href="http://github.com/torchie/this">This</a> is a work of fiction. Any events, regardless of their apparent occurrence with or relationship to existing people, places, or organizations, are purely fictional.</i><br /><br />
+			<b><u>Go to Scene...</u></b>
+			<ul id="navlist">
+				<li><a href="#" class="navlink" number="scripttest">1000</a></li>
+			</ul>
+		</div>
+		<div id="story" style="float:right; width:80%;">
+			
+		</div>
+
+
+	</body>
+</html>
